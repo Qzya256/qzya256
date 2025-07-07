@@ -96,25 +96,7 @@
         <div class="status away">⏳ Отошёл</div>
         <div class="comment">Вернусь через 15 минут</div>
         -->
-        
-        <div class="time">Обновлено: <span id="update-time"></span></div>
+        <div class="time">Статус обновлён: 7 июля в 13:40</div>
     </div>
-
-    <script>
-        // Автообновление времени
-        function updateTime() {
-            const now = new Date();
-            const timeString = now.toLocaleTimeString('ru-RU', { 
-                hour: '2-digit', 
-                minute: '2-digit',
-                day: '2-digit',
-                month: 'long'
-            });
-            document.getElementById('update-time').textContent = timeString;
-        }
-        
-        updateTime();
-        setInterval(updateTime, 60000);
-    </script>
 </body>
 </html>
