@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Мой статус</title>
+    <style>
+        body { font-family: Arial; text-align: center; padding: 50px; }
+        .status { font-size: 24px; margin: 20px; padding: 20px; border-radius: 10px; }
+        .online { background: #4CAF50; color: white; }
+        .offline { background: #F44336; color: white; }
+    </style>
+</head>
+<body>
+    <h1>Статус: Иван Петров</h1>
+    <div class="status online">🟢 На месте</div>
+    <p>Последнее обновление: <span id="time"></span></p>
+    <script>
+        document.getElementById('time').innerText = new Date().toLocaleString();
+    </script>
+</body>
+</html>
